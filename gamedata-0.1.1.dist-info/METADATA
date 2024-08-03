@@ -1,0 +1,21 @@
+Name: gamedata
+Version: 0.1.1
+summary: system for manage data of gamedata(.gdta) file
+License-file: LICENSE.txt
+Keywords: open, 
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Terminals
+Requires-Python: !=3.12.*,>=3.12
+
+Description
+-----------
+
+this project is created for read and manage the gamedata file.
+the gamedata file are file for the game data. 

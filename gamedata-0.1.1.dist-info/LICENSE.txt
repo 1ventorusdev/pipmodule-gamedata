@@ -1,0 +1,5 @@
+opensource project
+created by 1ventorus
+
+this project is created for read and manage the gamedata file.
+the gamedata file are file for the game data. 
