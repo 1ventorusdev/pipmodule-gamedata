@@ -2,8 +2,8 @@
 gamedta
 ========
 *creation of game, manage data of file.gdta*
-
-(the file.gdta are a dictionary of python saved into file)
+the file.gdta are a dictionary of python saved into file
+It is not mandatory that the file ends with .gdta, it can end with any extension as long as the system considers it as a txt file
 
 Install and import
 ------------------
@@ -23,7 +23,8 @@ gamedta using principal function :
         - dta["namedata"] = value # for save value with m, c+ or a
         - value = dta["namedata"] # for load value with r
         - dta.save() # for save data in  file
-        - dta.create_dico(name_of_dico) # for create data since a dico
+        - dta.createfilebydico(name_of_dico) # for create datafile since a dico
+        - name_of_dico = dta.createdicobyfile() # for create dico since datafile
         - dta.delete(name_of_data) # for delete the data in file
         - dta.import_data(other_file, format_of_file) # for copy since other file.json or file.csv a data (experimental)
         - dta.export_data(other_file, format_of_file) # for copy into other file.json or file.csv a data (experimental)
