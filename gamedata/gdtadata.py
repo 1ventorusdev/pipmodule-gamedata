@@ -12,7 +12,7 @@ class Gopen:
         self.filename = filename
         self.data = {}
 
-    def open(self, mode):
+    def open(self, mode="r"):
         if mode == "r":
             # Vérifier si le fichier existe avant de l'ouvrir en mode lecture
             if os.path.exists(self.filename):
@@ -71,7 +71,7 @@ class Gopen:
         else:
             raise FileNotFoundError(f"Le fichier {self.filename} n'existe pas.")
 
-    def create_dico(self, variables):
+    def createfilebydico(self, variables):
         for key, value in variables.items():
             if key in self.data:
                 try:
@@ -82,6 +82,19 @@ class Gopen:
                     self.data[key] = value
             else:
                 self.data[key] = value
+
+    def createdicobyfile(self):
+        dico = {}
+        with open(self.filename, "r") as file:
+            for line in file:
+                line = line.strip()
+                if not line:
+                    continue
+                key, value = line.split(":", 1)
+                key = key.strip()
+                value = value.strip()
+                dico[key] = value
+        return dico
 
     def delete(self, key):
         if key in self.data:
@@ -427,5 +440,3 @@ class Sound:
     
     def __exit__(self, exc_type, exc_value, traceback):
         pass
-
-
