@@ -2,7 +2,8 @@
 gamedta
 ========
 *creation of game, manage data of file.gdta*
-the file.gdta are a dictionary of python saved into file
+
+the file.gdta are a dictionary of python saved into file\n
 It is not mandatory that the file ends with .gdta, it can end with any extension as long as the system considers it as a txt file
 
 Install and import
